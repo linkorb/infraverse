@@ -64,6 +64,4 @@ abstract class BaseService
         $this->credential = $credential;
         return $this;
     }
-    
-    
 }

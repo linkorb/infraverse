@@ -25,4 +25,5 @@ $application->add(new \Infraverse\Command\ConfigCommand());
 $application->add(new \Infraverse\Command\SshCommand());
 $application->add(new \Infraverse\Command\ConnectCommand());
 $application->add(new \Infraverse\Command\MysqlClusterStatusCommand());
+$application->add(new \Infraverse\Command\MysqlClusterSetupCommand());
 $application->run();

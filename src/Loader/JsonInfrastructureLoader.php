@@ -59,6 +59,7 @@ class JsonInfrastructureLoader
             $service = new $className();
             $service->setName($sData['name']);
             $service->setType($sData['type']);
+            $service->setRole($sData['role']);
             $service->setServer($infrastructure->getServer($sData['server']));
             $service->setCredential($infrastructure->getCredential($sData['credential']));
             $infrastructure->addService($service);
@@ -70,6 +71,7 @@ class JsonInfrastructureLoader
             $cluster = new $className();
             $cluster->setName($cData['name']);
             $cluster->setType($cData['type']);
+            $cluster->setCredentialReplication($infrastructure->getCredential($cData['credential_replication']));
             
             foreach ($cData['members'] as $mData) {
                 $member = new ClusterMember();
