@@ -24,5 +24,8 @@
     "bin": [
         "bin/infraverse"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
 }
